@@ -10,16 +10,24 @@ Para este desarrollo se va usar el framework `Phaser`, framework basado en javas
 
 ### Inicialización del proyecto
 
-```cmd
+```
 npm init -y
 npm i phaser
 ```
 
 Con lo anterior se inicializa un proyecto que trabajara con `Node.js` y ademas se agreaga la dependencia de `Phaser`.
 
+Si se clona o se descarga el codigo solo se debe ejecutar el siguiente comando:
+
+```
+npm i
+```
+
+Lo siguente se debe realizar común y corriente.
+
 Se debera instalar de manera global `Parcel`,  que es un blunder de aplicaciones web, parecido a Webpack pero no necesita de configuración.
 
-```cmd
+```
 npm install -g parcel-bundler
 ```
 
