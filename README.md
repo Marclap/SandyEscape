@@ -1,12 +1,12 @@
 # Sandy Espape
 
-Desarrollo de videjuego para la clase Electiva VI: desarrollo de videojuegos.
+Desarrollo de videojuego para la clase Electiva VI: desarrollo de videojuegos.
 
 Desarrollado por Jhonatan Cardona Buitrago y Kenpo Erickson Castaño Gil.
 
 ## Configuración del proyecto
 
-Para este desarrollo se va usar el framework `Phaser`, framework basado en javascript.
+Para este desarrollo se va usar el framework `Phaser`, framework basado en JavaScript.
 
 ### Inicialización del proyecto
 
@@ -15,17 +15,17 @@ npm init -y
 npm i phaser
 ```
 
-Con lo anterior se inicializa un proyecto que trabajara con `Node.js` y ademas se agreaga la dependencia de `Phaser`.
+Con lo anterior se inicializa un proyecto que trabajara con `Node.js` y además se agrega la dependencia de `Phaser`.
 
-Si se clona o se descarga el codigo solo se debe ejecutar el siguiente comando:
+Si se clona o se descarga el código solo se debe ejecutar el siguiente comando:
 
 ```
 npm i
 ```
 
-Lo siguente se debe realizar común y corriente.
+Lo siguiente se debe realizar común y corriente.
 
-Se debera instalar de manera global `Parcel`,  que es un blunder de aplicaciones web, parecido a Webpack pero no necesita de configuración.
+Se deberá instalar de manera global `Parcel`, que es un blunder de aplicaciones web, parecido a Webpack pero no necesita de configuración.
 
 ```
 npm install -g parcel-bundler
@@ -39,13 +39,19 @@ import Phaser from 'phaser'
 new Phaser.Game()
 ```
 
-Para que el navegador entienda este codigo debemos hacer un blunder por medio de `Parcel`, así
+Para que el navegador entienda este código debemos hacer un blunder por medio de `Parcel`, así
 
-```cmd
+```
 parcel watch src/game.js
 ```
 
-Se crea el archivo donde se vera el viddeojuego llamado `index.html`:
+O el comando ya configurado en el proyecto:
+
+```
+npm run build
+```
+
+Se crea el archivo donde se verá el videojuego llamado `index.html`:
 
 ```html
 <!DOCTYPE html>
@@ -62,9 +68,9 @@ Se crea el archivo donde se vera el viddeojuego llamado `index.html`:
 </html>
 ```
 
-Se instancia el archivo `./dist/game.js` ya que este contiene el codigo que puede entender el navegador.
+Se instancia el archivo `./dist/game.js` ya que este contiene el código que puede entender el navegador.
 
-Phaser debe ejecutarse en un servidor o no funcionara, por lo tanto vamos a instalar de manera global `browser-sync`, este nos ayudara a ejecutar un servidor HTTP.
+Phaser debe ejecutarse en un servidor o no funcionara, por lo tanto, vamos a instalar de manera global `browser-sync`, este nos ayudara a ejecutar un servidor HTTP.
 
 ```
 npm install -g browser-sync
@@ -74,4 +80,10 @@ Y lo ejecutamos
 
 ```
 browser-sync start --server --files "."
+```
+
+O el comando ya configurado en el proyecto:
+
+```
+npm run dev
 ```
