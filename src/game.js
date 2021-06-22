@@ -24,10 +24,7 @@ function create() {
 }
 
 const colision = (sandy, enemigo) => {
-    alert("Game Over")
-    setTimeout(() => {
-        window.location.reload()
-    }, 3000)
+    window.location.reload()
 }
 
 function update() {
