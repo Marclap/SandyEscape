@@ -45,12 +45,6 @@ Para que el navegador entienda este código debemos hacer un blunder por medio d
 parcel watch src/game.js
 ```
 
-O el comando ya configurado en el proyecto:
-
-```
-npm run build
-```
-
 Se crea el archivo donde se verá el videojuego llamado `index.html`:
 
 ```html
@@ -80,10 +74,4 @@ Y lo ejecutamos
 
 ```
 browser-sync start --server --files "."
-```
-
-O el comando ya configurado en el proyecto:
-
-```
-npm run dev
 ```
